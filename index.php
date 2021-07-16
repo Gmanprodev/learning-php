@@ -20,7 +20,7 @@
         <div class="navbar-fixed">
             <nav class="nav-extended text-shadow teal lighten-2">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Task Manager</a>
+                    <a href="#" class="logo left-align">Task Manager</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="">Profile</a></li>
@@ -36,15 +36,36 @@
         </div>
         <ul class="sidenav teal lighten-2" id="mobile-demo">
             <li><h4 class="center-align white-text text-darken-4 sidenav-header">Task Manager</h4></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="">Tasks</a></li>
-            <li><a href="">Add Tasks</a></li>
-            <li><a href="">Log Out</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Log In</a></li>
-            <li><a href="">Sign Up</a></li>
+            <li><a href="" class="white-text">Profile</a></li>
+            <li><a href="" class="white-text">Tasks</a></li>
+            <li><a href="" class="white-text">Add Tasks</a></li>
+            <li><a href="" class="white-text">Log Out</a></li>
+            <li><a href="" class="white-text">Home</a></li>
+            <li><a href="" class="white-text">Log In</a></li>
+            <li><a href="" class="white-text">Sign Up</a></li>
         </ul>
     </header>
+
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header white-text teal darken-4 text-shadow">
+                <div class="col s3">
+                    <i class="fas fa-caret-down"></i>
+                        <a href="#" class="btn-small green accent-4">Done</a>
+                        <a href="#" class="btn-small light-blue lighten-1">Edit</a>
+                        <strong class="block">task name :</strong>
+                        <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
+                            data-position="right" data-tooltip="URGENT!">
+                        </i>
+                </div>
+            </div>
+            <div class="collapsible-body">
+                <strong>category name</strong>
+                <p>task description</p>
+                <p><em>by: task created by</em></p>
+            </div>
+        </li>
+    </ul>
     
 
 
