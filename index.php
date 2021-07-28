@@ -1,5 +1,13 @@
 <?php
 
+require 'task.php';
+require 'functions.php';
+
+$pdo = connectToDb();
+
+$tasks = fetchAllTasks($pdo);
+
+
 class Task {
     protected $category_name;
 
@@ -11,7 +19,7 @@ class Task {
 
     protected $created_by;
 
-    public function __construct($category_name) {
+    public function categoryName($category_name) {
         $this->category_name = $category_name;
     }
 
@@ -44,7 +52,6 @@ $task->createdBy('marcgull');
 
 var_dump($task);
 
+require 'index.view.php';
 
-
-//require 'index.view.php';
 
