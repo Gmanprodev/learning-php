@@ -2,7 +2,7 @@
 
 $query = require 'bootstrap.php';
 
-$tasks = $query->selectAll('tasks', 'Task');
+$tasks = $query->selectAll('tasks');
 
 
 
