@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
 
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
 
     <title>To Do Application</title>
 </head>
@@ -77,7 +77,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="script.js"></script>
+    <script src="static/js/script.js"></script>
 
 </body>
 </html>
