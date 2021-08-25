@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php require('partials/head.php'); ?>
+<?php require('../templates/head.php'); ?>
 
-<body>
+<body class="overflow-hide">
     
-<?php require('partials/nav.php'); ?>
+<?php require('../templates/nav.php'); ?>
 
     <ul class="collapsible">
         <li>
@@ -29,7 +29,7 @@
     </ul>
     
 
-<?php require('partials/footer.php'); ?>
+<?php require('../templates/footer.php'); ?>
 
 </body>
 </html>
