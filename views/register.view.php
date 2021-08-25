@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php require('partials/head.php'); ?>
+<?php require('../templates/head.php'); ?>
 
 <body>
     
-<?php require('partials/nav.php'); ?>
+<?php require('../templates/nav.php'); ?>
 
     <div class="row">
         <form class="col s12 m8 offset-m2" method="POST" action="#">
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-<?php require('partials/footer.php'); ?>
+<?php require('../templates/footer.php'); ?>
 
 </body>
 </html>
