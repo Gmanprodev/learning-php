@@ -37,7 +37,7 @@
     <div class="row">
         <div class="col s12">
             <p class="center-align">
-                Already Signed Up? <a href="login.view.php" class="btn-small teal text-shadow">Log In</a>
+                Already Registered? <a href="./login.view.php" class="btn-small teal text-shadow">Log In</a>
             </p>
         </div>
     </div>

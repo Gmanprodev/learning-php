@@ -9,7 +9,7 @@
                     <li><a href="tasks.view.php">Tasks</a></li>
                     <li><a href="">Add Tasks</a></li>
                     <li><a href="">Log Out</a></li>
-                    <li><a href="index.view.php">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="">Log In</a></li>
                     <li><a href="">Sign Up</a></li>
                 </ul>

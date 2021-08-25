@@ -76,5 +76,26 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 355px) {
+    .footer-text {
+        font-size: 20px;
+        margin-top: auto;
+    }
+}
 
+@media (max-width: 355px) {
+    .social-links {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
 
+@media (max-width: 355px) {
+    .logo {
+        font-size: 20px;
+    }
+}
+
+.card-panel {
+    margin-top: 40px !important;
+}

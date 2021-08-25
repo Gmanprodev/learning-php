@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php require('templates/head.php'); ?>
+<?php require('../templates/head.php'); ?>
 
 <body>
     
-<?php require('templates/nav.php'); ?>
+<?php require('../templates/nav.php'); ?>
 
     <div class="row">
         <form class="col s12 m8 offset-m2" method="POST" action="#">
@@ -36,12 +36,12 @@
     <div class="row">
         <div class="col s12">
             <p class="center-align">
-                <a href="register.view.php" class=" btn-small teal text-shadow">Create an Account</a>
+                <a href="./register.view.php" class=" btn-small teal text-shadow">Create an Account</a>
             </p>
         </div>
     </div>
 
-<?php require('templates/footer.php'); ?>
+<?php require('../templates/footer.php'); ?>
 
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php require('templates/head.php'); ?>
+<?php require('../templates/head.php'); ?>
 
 <body class="overflow-hide">
     
-<?php require('templates/nav.php'); ?>
+<?php require('../templates/nav.php'); ?>
 
     <div class="container-fluid hero-container">
         <div class="row">
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-<?php require('templates/footer.php'); ?>
+<?php require('../templates/footer.php'); ?>
 
 </body>
 </html>
