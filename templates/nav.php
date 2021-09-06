@@ -19,11 +19,11 @@
     <ul class="sidenav teal lighten-2" id="mobile-demo">
         <li><h4 class="center-align white-text text-darken-4 sidenav-header">TaskRunner</h4></li>
         <li><a href="" class="white-text">Profile</a></li>
-        <li><a href="" class="white-text">Tasks</a></li>
-        <li><a href="" class="white-text">Add Tasks</a></li>
+        <li><a href="/views/tasks.view.php" class="white-text">Tasks</a></li>
+        <li><a href="/views/add_tasks.view.php" class="white-text">Add Tasks</a></li>
         <li><a href="" class="white-text">Log Out</a></li>
-        <li><a href="" class="white-text">Home</a></li>
-        <li><a href="" class="white-text">Log In</a></li>
-        <li><a href="" class="white-text">Sign Up</a></li>
+        <li><a href="/" class="white-text">Home</a></li>
+        <li><a href="/views/login.view.php" class="white-text">Log In</a></li>
+        <li><a href="/views/register.view.php" class="white-text">Register</a></li>
     </ul>
 </header>

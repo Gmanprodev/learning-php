@@ -10,6 +10,10 @@
     height: 100vh;
 }
 
+.height {
+    min-height: calc(100vh - 160px);
+}
+
 .logo {
     margin-left: 5px;
     font-size: 30px;
@@ -26,6 +30,8 @@
 
 .btn-small {
     margin: 5px;
+    display: block;
+    position: relative;
 }
 
 .collapsible-header .col strong {
@@ -41,9 +47,7 @@
     height: 100vh;
     background: url("../images/heroimage.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 100px);
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -51,7 +55,6 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    position: relative;
 }
 
 .footer-text {
@@ -62,20 +65,12 @@
     margin-top: 10px;
 }
 
+.footer {
+    height: 70px;
+}
+
 .social-links {
     margin-top: 10px;
-}
-
-.footer {
-    height: 60px;
-    position: sticky;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-}
-
-.page-footer {
-    margin-top: 10% !important;
 }
 
 .overflow-hide {
@@ -105,3 +100,4 @@
 .card-panel {
     margin-top: 40px !important;
 }
+
