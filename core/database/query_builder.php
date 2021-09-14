@@ -15,6 +15,14 @@ class QueryBuilder{
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
+    public function raw($sql){
+        $statement = $this->pdo->prepare($sql);
+
+        $statement->execute();
+
+        return $statement->fetch(PDO::FETCH_CLASS);
+    }
+
     public function insert($table, $parameters){
         $sql = sprintf(
             'insert into %s (%s) values (%s)', 
