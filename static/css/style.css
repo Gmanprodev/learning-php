@@ -11,7 +11,7 @@
 }
 
 .height {
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 130px);
 }
 
 .logo {
@@ -30,8 +30,6 @@
 
 .btn-small {
     margin: 5px;
-    display: block;
-    position: relative;
 }
 
 .collapsible-header .col strong {

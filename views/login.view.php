@@ -3,7 +3,7 @@
 
 <?php require('../templates/head.php'); ?>
 
-<body class="overflow-hide">
+<body>
     
 <?php require('../templates/nav.php'); ?>
 

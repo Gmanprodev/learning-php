@@ -3,13 +3,13 @@
 
 <?php require('../templates/head.php'); ?>
 
-<body class="overflow-hide">
+<body>
     
 <?php require('../templates/nav.php'); ?>
 
     <main class="height">
         <div class="row">
-            <form class="col s12 m8 offset-m2" method="POST" action="/users">
+            <form class="col s12 m8 offset-m2" method="POST" action="/signup">
                 <div class="card-panel">
                     <div class="row">
                         <div class="input-field col s12">
