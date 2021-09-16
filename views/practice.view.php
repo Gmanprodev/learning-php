@@ -1,3 +1,10 @@
+<?php
+    header("Cache-Control: no-cache");
+    header("Expires: Friday, 1 Oct 2021 12:00:00 GMT");
+    header("Location: /");
+    exit();
+?>
+
 <!DOCTYPE html>
 <html>
 <body>
