@@ -25,5 +25,6 @@
         <li><a href="/" class="white-text">Home</a></li>
         <li><a href="/views/login.view.php" class="white-text">Log In</a></li>
         <li><a href="/views/register.view.php" class="white-text">Register</a></li>
+        <li><a href="/views/practice.view.php" class="white-text">Practice</a></li>
     </ul>
 </header>
