@@ -9,6 +9,20 @@
 </form>
 
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $fname = htmlspecialchars($_REQUEST['fname']);
+    if (empty($fname)) {
+        echo "Name is empty";
+    } else {
+        echo $fname;
+    }
+}
+?>
+
+<br>
+
+<?php
 echo "<br>";
 echo $_SERVER['PHP_SELF'];
 echo "<br>";
@@ -22,18 +36,6 @@ echo $_SERVER['HTTP_USER_AGENT'];
 echo "<br>";
 echo $_SERVER['SCRIPT_NAME'];
 echo "<br>";
-?>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $fname = htmlspecialchars($_REQUEST['fname']);
-    if (empty($fname)) {
-        echo "Name is empty";
-    } else {
-        echo $fname;
-    }
-}
 ?>
 
 <br>
