@@ -221,7 +221,177 @@ $turtle->intro();
 
 
 
+// create a class.
+class Goodbye {
+    // setting a  class constant which cannot be changed. 
+    const LEAVING_MESSAGE = "Thank you for visiting Neon Digital, see you again soon!";
+    // create a method which uses the constant value.
+    public function bye() {
+        echo self::LEAVING_MESSAGE;
+    }
+}
+// create a new object of the class.
+$goodbye = new Goodbye();
+// use the new object to call the bye method which displays the text string.
+$goodbye->bye();
 
 
 
+
+// Create a Parent class and public method.
+abstract class Transport {
+    public $name;
+    public function __construct($name) {
+        $this->name = $name;
+    }
+    // create an abstract method.
+    abstract public function intro() : string;
+}
+
+// Create three Child classes and use the parent class method.
+class Audi extends Transport {
+    public function intro() : string {
+        return "Choose German quality! I'm an $this->name!";
+    }
+}
+
+class Volvo extends Transport {
+    public function intro() : string {
+        return "Proud to be Swedish! I'm a $this->name!";
+    }
+}
+
+class Citroen extends Transport {
+    public function intro() : string {
+        return "French extravagance! I'm a $this->name!";
+    }
+}
+
+// Create new objects from the child classes and display the string value.
+$audi = new audi("Audi");
+echo $audi->intro();
+echo "<br>";
+
+$volvo = new volvo("Volvo");
+echo $volvo->intro();
+echo "<br>";
+
+$citroen = new citroen("Citroen");
+echo $citroen->intro();
+
+
+
+// Create an Interface definition.
+interface Animal {
+    public function makeSound();
+}
+
+// Create three different Class definitions that use the public interface method.
+class Cat implements Animal {
+    public function makeSound() {
+        echo " Meow ";
+    }
+}
+
+class Dog implements Animal {
+    public function makeSound() {
+        echo " Bark ";
+    }
+}
+
+class Mouse implements Animal {
+    public function makeSound() {
+        echo " Squeak ";
+    }
+}
+
+// Create new objects
+$cat = new Cat();
+$dog = new Dog();
+$mouse = new Mouse();
+$animals = array($cat, $dog, $mouse);
+
+// For each of the animals execute the public method to display the string value of each animal noise.
+foreach($animals as $animal) {
+    $animal->makeSound();
+}
+
+
+
+
+// create two traits that can be used by classes.
+trait message1 {
+    public function msg1() {
+        echo "OOP is fun! ";
+    }
+}
+
+trait message2 {
+public function msg2() {
+    echo "OOP reduces code duplication!";
+}
+}
+//Create two classes that use the two traits.
+class Welcome {
+use message1;
+}
+
+class Welcome2 {
+use message1, message2;
+}
+//Create new objects and execute the trait methods.
+$obj = new Welcome();
+$obj->msg1();
+echo "<br>";
+
+$obj2 = new Welcome2();
+$obj2->msg1();
+$obj2->msg2();
+
+
+
+
+
+// Create an Iterator class.
+class MyIterator implements Iterator {
+    private $items = [];
+    private $pointer = 0;
+    // Create a public construct method.
+    public function __construct($items) {
+        // Use array_values() to make sure that the keys are numbers.
+        $this->items = array_values($items);
+    }
+    // returns the element that the pointer is currently pointing to.
+    public function current() {
+        return $this->items[$this->pointer];
+    }
+    // returns the key associated with the current element in the list.
+    public function key() {
+        return $this->pointer;
+    }
+    // moves the pointer to the next element in the list.
+    public function next() {
+        $this->pointer++;
+    }
+    // moves the pointer to the first element in the list.
+    public function rewind() {
+        $this->pointer = 0;
+    }
+    // if no elements are being pointed to return false, for anything else return true.
+    public function valid() {
+        // count() indicates how many items are in the list
+        return $this->pointer < count($this->items);
+    }
+}
+
+// A function that uses iterables
+function printIterable(iterable $myIterable) {
+    foreach($myIterable as $item) {
+        echo $item;
+    }
+}
+
+// Use the iterator as an iterable.
+$iterator = new MyIterator(["a", "b", "c"]);
+printIterable($iterator);
 

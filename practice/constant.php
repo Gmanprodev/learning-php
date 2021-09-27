@@ -4,8 +4,8 @@ define("LUNCHTIME", "I'm really hungry!");
 echo LUNCHTIME;
 
 // defines a constant, sets a value and then declares the constant as case insensitive.
-define("DINNER", "I'm still really hungry", true);
-echo dinner;
+define("DINNER", "I'm still really hungry");
+echo DINNER;
 
 // defines a constant and sets array values, then echo's the third value. 
 define("languages", ["English", "German", "French", "Chinese"]);
